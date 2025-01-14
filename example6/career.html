@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ocentesolution</title>
+
+    <link rel="shortcut icon" href="img/processed_image (1).png" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+    <link href="career.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo"><img src="./img/n1.png" alt="Transparent Background Image" class="logo1" ></a>
+
+            <button class="hamburger">&#9776;</button>
+
+            <ul class="nav-menu">
+
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero" id="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('./img/banner.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/banner2.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/banner4.jpg')"></div>
+        </div>
+        <div class="hero-content">
+            <h2 style="text-align: center; font-size: 50px; color:#3B1E54;">Ocente Solutions<br><div style="font-size: 20px;"><i>"Driving Improvement,Empowering Advancement"</i></div></h2><br><br>
+            <h3 style="text-align: center; font-size: px; color:#3B1E54;"></h3>
+            <h1 class="hero-title">Join Our Team</h1>
+            <p class="hero-description">We're looking for talented individuals to help us shape the future. Explore our open positions and find your perfect fit.</p>
+                
+            <!-- <a href="" class="button button-primary">Get Started</a> -->
+        </div>
+    </section>
+
+    <main>
+        
+
+        <section id="jobs" class="job-listings">
+            <div class="container">
+                <h2>Current Openings</h2>
+                <div class="jobs">
+                    <!-- Job listings will be dynamically added here -->
+                     <div style="font-size: 40px; text-align: center;" >Currently packed up, but more opportunities are on the way!</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="culture" class="company-culture">
+            <div class="container">
+                <h2>Our Culture</h2>
+                <div class="culture-grid">
+                    <div class="culture-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Collaborative</h3>
+                        <p>We believe in the power of teamwork and open communication.</p>
+                    </div>
+                    <div class="culture-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Innovative</h3>
+                        <p>We encourage creative thinking and embrace new ideas.</p>
+                    </div>
+                    <div class="culture-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Work-Life Balance</h3>
+                        <p>We value the importance of a healthy work-life balance.</p>
+                    </div>
+                    <div class="culture-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Growth-Oriented</h3>
+                        <p>We invest in our employees' personal and professional development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+ <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to providing the best business solutions for our clients, helping them achieve their goals and grow their businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">Services</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./index.html">Privacy & Policy</a></li>
+                        <li><a href="./index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox">Email:- info@ocentesolutions.in</a></a></li>
+                        <li><a href="https://wa.me/+916393816812">Phone:- +91 63XXXXXX12</a></li>
+                        <li>Address: East Dehli,Delhi-110091</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ocentesolution.</p>
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+        <script>
+            
+            document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const button = form.querySelector('button');
+            button.textContent = 'Sending...';
+            button.disabled = true;
+            setTimeout(() => {
+                button.textContent = 'Message Sent!';
+                form.reset();
+                setTimeout(() => {
+                    button.textContent = 'Send Message';
+                    button.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    }
+
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        slides[currentSlide]?.classList.remove('active'); // Use optional chaining
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide]?.classList.add('active');
+    }
+
+    if (slides.length > 0) {
+        setInterval(nextSlide, 5000);
+    }
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    }
+});
+
+        </script>
+        
+        
+       
+    </body>
+    </html>
+    
+    

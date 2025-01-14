@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Leave Management</title>
+    <link rel="stylesheet" href="./css/HRMS.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HRMS Leave Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="admin-panel.html">Dashboard</a></li>
+                    <li><a href="employees.html">Employees</a></li>
+                    <li><a href="leave-management.html">Leave Management</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Leave Requests</h2>
+            <table id="leave-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Employee</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>2025-06-01</td>
+                        <td>2025-06-05</td>
+                        <td>Vacation</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>2025-06-10</td>
+                        <td>2025-06-11</td>
+                        <td>Sick Leave</td>
+                        <td>Approved</td>
+                        <td>
+                            <button class="view">View</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; 2025 HRMS. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="./script/HRMS1.js"></script>
+</body>
+</html>

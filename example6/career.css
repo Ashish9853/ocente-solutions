@@ -1,0 +1,153 @@
+        /* Job listings styles */
+.job-listings {
+padding: 4rem 0;
+}
+
+.job-listings h2 {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.jobs {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.job-card {
+background-color: #f8f9fa;
+border-radius: 8px;
+padding: 1.5rem;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+transform: translateY(-5px);
+}
+
+.job-card h3 {
+ margin-bottom: 0.5rem;
+}
+
+.job-card p {
+margin-bottom: 1rem;
+}
+
+.apply-btn {
+display: inline-block;
+background-color: #007bff;
+color: #fff;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+.apply-btn:hover {
+background-color: #0056b3;
+}
+
+ /* Company culture styles */
+.company-culture {
+background-color: #f8f9fa;
+padding: 4rem 0;
+text-align: center;
+}
+.company-culture h2 {
+/* Job listings styles */
+.job-listings {
+    padding: 4rem 0;
+}
+
+.job-listings h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.job-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.job-card p {
+    margin-bottom: 1rem;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+ /* Company culture styles */
+.company-culture {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+.company-culture h2 {
+    margin-bottom: 2rem;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.culture-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.culture-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+}
+
+.culture-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 2rem;
+}
+
+.culture-item {
+background-color: #fff;
+border-radius: 8px;
+padding: 1.5rem;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.culture-item i {
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #007bff;
+}
